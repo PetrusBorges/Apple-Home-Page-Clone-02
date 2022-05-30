@@ -9,7 +9,7 @@ It was possible to have fundamental knowledge of HTML, CSS and JavaScript.
 
 [Apple Home Page Clone](https://petrusborges-apple-clone02.netlify.app)
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/105453766/168395457-2152dc05-e4c0-45c0-b283-2f9e23629fb6.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/105453766/170904664-bb46e258-d522-4974-8460-cee323be5965.gif)
 
 ## 🛠️ Built with
 
