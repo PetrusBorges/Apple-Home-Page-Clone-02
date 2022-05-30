@@ -1,0 +1,434 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav_list_mobile {
+  display: none;
+}
+
+.nav_link {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0 1rem;
+  transition: opacity .5s;
+}
+
+.nav_link:hover {
+  opacity: .5;
+}
+
+.nav_link_apple {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url(/images/icons/apple.svg) center no-repeat;
+}
+
+.nav_link_search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url(/images/icons/search.svg) center no-repeat;
+}
+
+.nav_link_bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url(/images/icons/bag.svg) center no-repeat;
+}
+
+/* iPhone 11 Pro Section */
+
+.iphone_11_pro {
+  background: url(/images/hero/iphone-11-pro/iphone_11_pro_large.jpg);
+  margin-top: 4.4rem;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title_heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -.005rem;
+}
+
+.title_sub_heading {
+  font-size: 2.65rem;
+  margin-top: .6rem;
+  letter-spacing: .008rem;
+  font-weight: 400;
+}
+
+.title_price {
+  font-size: 1.7rem;
+  color: #888;
+  margin-top: .68rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta_link {
+  color: #66bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+
+.cta_link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta_link:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+/* iPhone 11 Section */
+
+.iphone_11 {
+  background: url(/images/hero/iphone-11/iphone_11_large.jpg);
+}
+
+.title_dark {
+  color: #000;
+}
+
+.cta_link_darker {
+  color: #0070c9;
+}
+
+.cta_link_darker:hover {
+  border-bottom-color: #0070c9;
+}
+
+.watch {
+  background: url(/images/hero/watch/watch_large.jpg);
+}
+
+.title_heading_watch {
+  height: 7.8rem;
+  background: url(/images/hero/watch/logo_watch_large.png) center no-repeat;
+  background-size: auto 7.8rem;
+  margin-top: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Move to the bottom of all sections */
+
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: .6rem solid #fff;
+  border-bottom: .6rem solid #fff;
+}
+
+.iphone_11_pro {
+  border-top: none;
+}
+
+/* end */
+
+@media screen and (max-width: 1068px) {
+  .iphone_11_pro {
+    background: url(/images/hero/iphone-11-pro/iphone_11_pro_medium.jpg);
+  }
+
+  .iphone_11 {
+    background: url(/images/hero/iphone-11/iphone_11_medium.jpg);
+  }
+
+  .watch {
+    background: url(/images/hero/watch/watch_medium.jpg);
+  }
+
+  .hero {
+    height: 65rem;
+    background-size: auto 69.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title_heading {
+    font-size: 4.4rem;
+  }
+
+  .title_sub_heading {
+    font-size: 2.4rem;
+  }
+
+  .cta_link:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .title_heading_watch {
+    height: 6.2rem;
+    background: url(/images/hero/watch/logo_watch_medium.png) center no-repeat;
+    background-size:  auto 6.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 4.8rem;
+    transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1)
+                height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .iphone_11_pro {
+    margin-top: 4.8rem;
+  }
+
+  .nav_list {
+    margin-top: 0;
+  }
+
+  .nav_list_mobile {
+    display: flex;
+  }
+
+  .nav_item {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_item_hidden {
+    display: none;
+  }
+
+  .mobile_menu {
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.7rem;
+    height: 1px;
+    background-color: #fff;
+    transition: margin_top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line_top {
+    margin-top: 3px;
+  }
+
+  .line_bottom {
+    margin-top: -.4rem;
+  }
+
+  .active .line_top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);;
+  }
+
+  .active .line_bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);;
+  }
+
+  header.active {
+    height: 100%;
+    background-color: #000;
+  }
+
+  .nav_link_apple {
+    width: 1.8rem;
+    height: 4.8rem;
+    position: absolute;
+    z-index: 1500;
+  }
+
+  .nav_link_bag {
+    width: 1.6rem;
+    height: 4.8rem;
+    transform: opacity 3s;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav_link {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .nav_list_larger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+  }
+
+  .active .nav_list_larger {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active .nav_link_bag {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  .nav_list_larger .nav_item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+  }
+
+  .nav_list_larger .nav_item:nth-child(9) {
+    border-bottom: none;
+  }
+
+  .active .nav_list_larger .nav_item {
+    animation: fadeIn 1s ease-in;
+  }
+
+
+
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .iphone_11_pro {
+    background: url(/images/hero/iphone-11-pro/iphone_11_pro_small.jpg);
+  }
+
+  .iphone_11 {
+    background: url(/images/hero/iphone-11/iphone_11_small.jpg);
+  }
+
+  .watch {
+    background: url(/images/hero/watch/watch_small.jpg);
+  }
+
+  .hero {
+    height: 50rem;
+    background-size: auto 54.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    padding: 3.7rem;
+  }
+
+  .title_heading {
+    font-size: 3.2rem;
+  }
+
+  .title_sub_heading {
+    font-size: 1.9rem;
+  }
+
+  .title_heading_watch {
+    margin-top: -.5rem;
+    margin-bottom: 0;
+  }
+
+  .title_price {
+    font-size: 1.4rem;
+  }
+
+  .cta {
+    margin-top: .7rem;
+  }
+
+  .cta_link {
+    font-size: 1.9rem;
+  }
+}
